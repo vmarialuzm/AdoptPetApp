@@ -4,7 +4,8 @@ export const Navbar = () => {
   return (
     <div>
         <h1>Adopt Pet App</h1>
-        <Link to='/user-create'>create user</Link>
+        <Link to='/signin'>signin</Link>
+        <Link to='/login'>login</Link>
     </div>
   )
 }

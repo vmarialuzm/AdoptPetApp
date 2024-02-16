@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { UserFormPage } from './pages/UserFormPage';
+import { SignIn } from './pages/SignIn';
+import { Login } from './pages/Login';
 import { Navbar } from './components/Navbar';
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path='/' element={<Navigate to='/user-create' />} />
-        <Route path='/user-create' element={<UserFormPage />} />
+        <Route path='/' element={<Navigate to='/login' />} />
+        <Route path='/signin' element={<SignIn />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     </BrowserRouter>
   )
