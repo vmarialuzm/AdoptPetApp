@@ -30,7 +30,7 @@ export const SignIn = () => {
             {errors.email && <span>email is required</span>}
 
             <input 
-                type="username" 
+                type="text" 
                 placeholder="username" 
                 className="bg-zinc-700 p-3 rounded-lg block w-full mb-3"
                 {...register("username", { required: true })}
