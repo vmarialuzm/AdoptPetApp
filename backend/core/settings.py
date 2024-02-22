@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
+#cloudinary imports
+import cloudinary_storage
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -45,6 +48,9 @@ INSTALLED_APPS = [
     'corsheaders',
     'coreapi',
     'accounts',
+    'pets',
+    'cloudinary',
+    'cloudinary_storage'
 ]
 
 MIDDLEWARE = [
@@ -138,4 +144,16 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+# Cloudinary - Django integration
+CLOUDINARY_STORAGE = {
+  "CLOUD_NAME": "dbe88hckk", 
+  "API_KEY": "513929725166659", 
+  "API_SECRET": "0YUMB08X4zORp86rKt8xXnXo54s"
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
+
 
