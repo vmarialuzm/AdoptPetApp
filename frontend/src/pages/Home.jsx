@@ -15,10 +15,25 @@ export const Home = () => {
   }, []);
 
   return (
-    <div>
-      {pets.map(pet => (
-        <PetCard key={pet.id} pet={pet}/>
-      ))}
+    <div className="grid grid-cols-4 gap-4">
+
+      <div className="bg-white col-span-1">
+        <h1>Filtrar por</h1>
+        <hr />
+        <h2>Edad</h2>
+        <h2>Tamaño</h2>
+        <h2>Sexo</h2>
+      </div>
+
+      <div className="col-span-3">
+        <div className="grid grid-cols-3 gap-3 bg-white">
+          {pets.map(pet => (
+            <PetCard key={pet.id} pet={pet}/>
+          ))}
+        </div>
+      </div>
+
     </div>
+
   );
 }
