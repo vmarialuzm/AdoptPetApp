@@ -14,7 +14,7 @@ export const Navbar = () => {
               <Link className="lg:mr-7">Adopta</Link>
               <Link className="lg:mr-7">Club</Link>
               <Link className="lg:mr-7">Consultas</Link>
-              <Link className="lg:mr-7">Blog</Link>
+              <Link to='/blog' className="lg:mr-7">Blog</Link>
               <Link className="lg:mr-7">Nosotros</Link>
               <Link>Perros Perdidos</Link>
             </div>

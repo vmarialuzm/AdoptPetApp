@@ -2,7 +2,7 @@ export const PetCard = ({ pet }) => {
   return (
     <>
 
-        <div className="bg-purple-500 flex flex-col items-center">
+        <div className="flex flex-col items-center">
 
           <div>
             <img className="p-4 w-64 h-64" src={pet.image} alt={pet.name} />

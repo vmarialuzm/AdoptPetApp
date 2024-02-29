@@ -17,7 +17,7 @@ export const Home = () => {
   return (
     <div className="grid grid-cols-4 gap-4">
 
-      <div className="bg-white col-span-1">
+      <div className="col-span-1">
         <h1>Filtrar por</h1>
         <hr />
         <h2>Edad</h2>
@@ -26,7 +26,7 @@ export const Home = () => {
       </div>
 
       <div className="col-span-3">
-        <div className="grid grid-cols-3 gap-3 bg-white">
+        <div className="grid grid-cols-3 gap-3 ">
           {pets.map(pet => (
             <PetCard key={pet.id} pet={pet}/>
           ))}
