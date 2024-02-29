@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'coreapi',
     'accounts',
     'pets',
+    'blog',
     'cloudinary',
     'cloudinary_storage'
 ]
