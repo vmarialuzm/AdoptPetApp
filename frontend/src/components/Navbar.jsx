@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export const Navbar = () => {
   return (
     <>
-      <nav className="bg-white py-6 relative">
+      <nav className="bg-white px-24 py-6 relative">
         <div className="container mx-auto flex">
           <div className="flex flex-grow">
             <img src="" alt="AdoptPetApp" />
