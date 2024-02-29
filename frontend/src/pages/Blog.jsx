@@ -23,7 +23,7 @@ export const Blog = () => {
         <h2>Lifestyle</h2>
         <h2>Más</h2>
       </div>
-      <div className="grid grid-cols-3 gap-3 ">
+      <div className="grid grid-cols-3 gap-10 ">
         {blog.map(publicacion => (
           <BlogCard key={publicacion.id} publicacion={publicacion}/>
         ))}

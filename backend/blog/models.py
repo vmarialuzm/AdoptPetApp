@@ -2,7 +2,7 @@ from django.db import models
 from accounts.models import CustomUser
 
 class Blog(models.Model):
-    user_id = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     image = models.FileField(upload_to='blog-post-image', default='default_image.jpg')
     date = models.DateField(auto_now_add=True)
     minutes = models.IntegerField(default=1)
