@@ -1,12 +1,12 @@
-export const BlogCard = () => {
+export const BlogCard = ({ publicacion }) => {
   return (
     <div>
-        <img src="" alt="imagen" />
-        <p>nombre</p>
-        <p>fecha</p>
-        <p>minutos</p>
-        <h1>titulo</h1>
-        <p>contenido</p>
+        <img src={publicacion.image} alt="imagen" />
+        <p>{publicacion.user_id}</p>
+        <p>{publicacion.date}</p>
+        <p>{publicacion.minutes}</p>
+        <h1>{publicacion.title}</h1>
+        <p>{publicacion.content}</p>
     </div>
   )
 }

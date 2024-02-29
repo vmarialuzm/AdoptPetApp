@@ -8,7 +8,6 @@ export const Home = () => {
   useEffect(() => {
     async function loadPets() {
       const res = await getAllPets();
-      console.log(res.data.results)
       setPets(res.data.results);
     }
     loadPets();
