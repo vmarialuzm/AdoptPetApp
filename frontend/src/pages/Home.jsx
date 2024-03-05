@@ -13,6 +13,17 @@ export const Home = () => {
     loadPets();
   }, []);
 
+
+  const onClick = () => {
+    const edad = document.getElementById('edad')
+    if (edad.style.display === 'block'){
+      edad.style.display = 'none'
+    } else {
+      edad.style.display = 'block'
+    }
+    
+  }
+
   return (
     <div className="grid grid-cols-4 gap-4 container mx-auto px-24">
 
@@ -20,21 +31,25 @@ export const Home = () => {
         <h1 className="text-2xl font-semibold py-4">Filtrar por</h1>
         <hr />
 
-        <div className="flex justify-between cursor-pointer">
-          <span className="pt-4">Edad </span>
-          <span className="pt-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg></span>
+        <div>
+          <div className="flex justify-between cursor-pointer" onClick={onClick}>
+            <span className="pt-4">Edad </span>
+            <span className="pt-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg></span>
+            <span className="pt-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /></svg></span>
+          </div>
+          
+          <ul className="py-4" id="edad">
+            <li className="cursor-pointer"><input type="checkbox" /> 1-3 años</li>
+            <li className="cursor-pointer"><input type="checkbox" /> 4-7 años</li>
+            <li className="cursor-pointer"><input type="checkbox" /> 7 + años</li>
+          </ul>
+          <hr />
         </div>
-        
-        <ul className="py-4">
-          <li className="cursor-pointer"><input type="checkbox" /> 1-3 años</li>
-          <li className="cursor-pointer"><input type="checkbox" /> 4-7 años</li>
-          <li className="cursor-pointer"><input type="checkbox" /> 7 + años</li>
-        </ul>
-        <hr />
 
         <div className="flex justify-between cursor-pointer">
           <span className="pt-4">Tamaño</span>
           <span className="pt-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg></span>
+          <span className="pt-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /></svg></span>
         </div>
 
         <ul className="py-4">
@@ -47,6 +62,7 @@ export const Home = () => {
         <div className="flex justify-between cursor-pointer">
           <span className="pt-4">Sexo</span>
           <span className="pt-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg></span>
+          <span className="pt-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /></svg></span>
         </div>       
 
         <ul className="py-4">
