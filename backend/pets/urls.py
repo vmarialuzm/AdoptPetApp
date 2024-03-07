@@ -3,6 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('list/', views.PetViewSet.as_view()),
+    path('list/', views.PetListViewSet.as_view()),
 
 ]

@@ -5,7 +5,7 @@ from rest_framework import status
 from .models import Pet
 from .serializers import PetSerializer
 
-class PetViewSet(APIView):
+class PetListViewSet(APIView):
     permission_classes = [AllowAny]
     def get(self, request, format=None):
         if Pet.objects.all().exists():
