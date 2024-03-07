@@ -12,7 +12,7 @@ class PetSerializer(serializers.ModelSerializer):
             'name',
             'breed',
             'image',
-            'age'
+            'age',
             'size',
             'gender'
         ]
