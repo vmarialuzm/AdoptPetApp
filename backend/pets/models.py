@@ -2,7 +2,7 @@ from django.db import models
 from accounts.models import CustomUser
 
 class Pet(models.Model):
-    user_id = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
     breed = models.CharField(max_length=50)
     image = models.FileField(upload_to='pet-post-image')
